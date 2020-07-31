@@ -4,8 +4,8 @@ $Timer = New-Object -TypeName System.Diagnostics.Stopwatch
 $Timer.Start()
 
 notepad.exe
-Write-Host -ForegroundColor Red "Opened notepad, do not close notepad until you're done. Closing notepad will stop the CPU usage monitoring."
-Write-Host -ForegroundColor Red "Could've done it better I know :)"
+Write-Host -ForegroundColor Yellow "Opened notepad, do not close notepad until you're done. Closing notepad will stop the CPU usage monitoring."
+Write-Host -ForegroundColor Yellow "Could've done it better I know :)"
 do {
 
     $CPU = Get-CimInstance -ClassName Win32_Processor
